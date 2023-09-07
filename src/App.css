@@ -1,0 +1,7 @@
+
+
+.your-scroll-container {
+  overflow: auto; /* O 'scroll' si deseas barras de desplazamiento siempre visibles */
+  height: 100vh; /* Puedes ajustar la altura según tus necesidades */
+  /* Añade otros estilos según tus preferencias */
+}
