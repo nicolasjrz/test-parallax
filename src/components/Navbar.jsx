@@ -82,8 +82,12 @@ export const Navbar = () => {
             >
               {pages.map((page) => (
                 <MenuItem key={page.id} onClick={handleCloseNavMenu}>
-                  <Link component={RouterLink} to={page.url}>
-                    <Typography textAlign="center"> {page.name}</Typography>
+                  <Link
+                    component={RouterLink}
+                    to={page.url}
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    <Typography textAlign="center">{page.name}</Typography>
                   </Link>
                 </MenuItem>
               ))}
@@ -116,15 +120,21 @@ export const Navbar = () => {
             }}
           >
             {pages.map((page) => (
-              <Button
-                key={page.id}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
-              >
-                <Link component={RouterLink} to={page.url}>
-                  <Typography textAlign="center"> {page.name}</Typography>
+              <>
+                <Link
+                  component={RouterLink}
+                  to={page.url}
+                  style={{ textDecoration: "none", color: "inherit" }}
+                >
+                  <Button
+                    key={page.id}
+                    onClick={handleCloseNavMenu}
+                    sx={{ my: 2, color: "white", display: "block" }}
+                  >
+                    <Typography textAlign="center">{page.name}</Typography>
+                  </Button>
                 </Link>
-              </Button>
+              </>
             ))}
           </Box>
         </Toolbar>
