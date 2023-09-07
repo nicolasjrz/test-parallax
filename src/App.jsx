@@ -1,11 +1,9 @@
-import { Navbar } from "./components/Navbar";
-import { SkewedPage } from "./pages/SkewedPage";
+import { AppRouter } from "./router/AppRouter";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <SkewedPage />
+      <AppRouter />
     </>
   );
 }

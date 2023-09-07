@@ -5,7 +5,7 @@ import { SkewedPage } from "../pages/SkewedPage";
 export const PagesRoutes = () => {
   return (
     <Routes>
-      <Route path="paralax" element={<ParallaxPage />} />
+      <Route path="parallax" element={<ParallaxPage />} />
       <Route path="skewed" element={<SkewedPage />} />
     </Routes>
   );
