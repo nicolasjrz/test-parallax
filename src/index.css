@@ -4,7 +4,20 @@
   --secudaryColor: #fff;
   --bgColor: linear-gradient(45deg, #00e2ff, #0027ff);
 }
-
+ *,
+  *::after,
+  *::before {
+    -ms-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  
+    /* ROOT FONT STYLES */
+    font-family: Helvetica, sans-serif;
+    line-height: 1.2;
+  }
 
 .first{
   background:var(--bgColor);
