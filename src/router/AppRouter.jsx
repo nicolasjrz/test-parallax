@@ -6,7 +6,7 @@ export const AppRouter = () => {
     <Routes>
       {/* pagina principal  */}
 
-      <Route path="/*" element={<PagesRoutes />} />
+      <Route path="*" element={<PagesRoutes />} />
     </Routes>
   );
 };

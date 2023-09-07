@@ -12,7 +12,7 @@ import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 
 const pages = [
-  { id: 1, name: "Parallax", url: "/parallax" },
+  { id: 1, name: "Parallax", url: "/" },
   { id: 2, name: "Skewed", url: "/skewed" },
 ];
 
