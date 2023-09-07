@@ -1,7 +1,6 @@
 import { Routes, Route } from "react-router-dom";
-
-import ParallaxPage from "./ParallaxPage"; // Importa ParallaxPage y SkewedPage desde tus archivos
-import SkewedPage from "./SkewedPage";
+import { ParallaxPage } from "../pages/ParallaxPage";
+import { SkewedPage } from "../pages/SkewedPage";
 
 const NotFound = () => {
   return (
