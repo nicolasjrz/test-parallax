@@ -14,7 +14,8 @@ import AdbIcon from "@mui/icons-material/Adb";
 const pages = [
   { id: 1, name: "Parallax", url: "/" },
   { id: 2, name: "Skewed", url: "/skewed" },
-  { id: 2, name: "Test", url: "/test" },
+  { id: 3, name: "Gallery", url: "/gallery" },
+  { id: 4, name: "3D", url: "/3D" },
 ];
 
 import { Link, Link as RouterLink } from "react-router-dom";
