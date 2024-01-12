@@ -1,7 +1,8 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import { ParallaxPage } from "../pages/ParallaxPage";
 import { SkewedPage } from "../pages/SkewedPage";
-import { TestPage } from "../pages/TestPage";
+import { GalleryPage } from "../pages/GalleryPage";
+import { TresDePage } from "../pages/TresDePage";
 
 // const NotFound = () => {
 //   return (
@@ -17,7 +18,8 @@ export const PagesRoutes = () => {
     <Routes>
       <Route path="/" element={<ParallaxPage />} />
       <Route path="/skewed" element={<SkewedPage />} />
-      <Route path="/test" element={<TestPage />} />
+      <Route path="/gallery" element={<GalleryPage />} />
+      <Route path="/3D" element={<TresDePage />} />
       <Route path="/*" element={<Navigate to="/" />} />
     </Routes>
   );
