@@ -83,8 +83,8 @@ export const Navbar = () => {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem key={page.id} onClick={handleCloseNavMenu}>
+              {pages.map((page, index) => (
+                <MenuItem key={index} onClick={handleCloseNavMenu}>
                   <Link
                     component={RouterLink}
                     to={page.url}
@@ -122,22 +122,21 @@ export const Navbar = () => {
               justifyContent: "end",
             }}
           >
-            {pages.map((page) => (
-              <>
-                <Link
-                  component={RouterLink}
-                  to={page.url}
-                  style={{ textDecoration: "none", color: "inherit" }}
+            {pages.map((page, index) => (
+              <Link
+                key={index}
+                component={RouterLink}
+                to={page.url}
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                <Button
+                  key={page.id}
+                  onClick={handleCloseNavMenu}
+                  sx={{ my: 2, color: "white", display: "block" }}
                 >
-                  <Button
-                    key={page.id}
-                    onClick={handleCloseNavMenu}
-                    sx={{ my: 2, color: "white", display: "block" }}
-                  >
-                    <Typography textAlign="center">{page.name}</Typography>
-                  </Button>
-                </Link>
-              </>
+                  <Typography textAlign="center">{page.name}</Typography>
+                </Button>
+              </Link>
             ))}
           </Box>
         </Toolbar>
