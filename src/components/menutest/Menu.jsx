@@ -117,7 +117,7 @@ function DrawerAppBar(props) {
           <img
             src={logo} // Reemplaza con la ruta real de tu logo
             alt="Logo"
-            style={{ maxWidth: 150, maxHeight: 100 }} // Ajusta el tamaño según tus necesidades
+            style={{ maxWidth: 150, maxHeight: 50 }} // Ajusta el tamaño según tus necesidades
           />
           <IconButton
             color="inherit"
