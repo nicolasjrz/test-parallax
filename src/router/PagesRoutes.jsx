@@ -3,6 +3,7 @@ import { ParallaxPage } from "../pages/ParallaxPage";
 import { SkewedPage } from "../pages/SkewedPage";
 import { GalleryPage } from "../pages/GalleryPage";
 import { TresDePage } from "../pages/TresDePage";
+import { VideoPage } from "../pages/VideoPage";
 
 // const NotFound = () => {
 //   return (
@@ -16,7 +17,8 @@ import { TresDePage } from "../pages/TresDePage";
 export const PagesRoutes = () => {
   return (
     <Routes>
-      <Route path="/" element={<ParallaxPage />} />
+      <Route path="/" element={<VideoPage />} />
+      <Route path="/parallax" element={<ParallaxPage />} />
       <Route path="/skewed" element={<SkewedPage />} />
       <Route path="/gallery" element={<GalleryPage />} />
       <Route path="/3D" element={<TresDePage />} />

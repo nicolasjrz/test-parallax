@@ -12,10 +12,11 @@ import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 
 const pages = [
-  { id: 1, name: "Parallax", url: "/" },
+  { id: 1, name: "Video", url: "/video" },
   { id: 2, name: "Skewed", url: "/skewed" },
   { id: 3, name: "Gallery", url: "/gallery" },
   { id: 4, name: "3D", url: "/3D" },
+  { id: 5, name: "Parallax", url: "/parallax" },
 ];
 
 import { Link, Link as RouterLink } from "react-router-dom";
