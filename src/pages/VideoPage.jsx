@@ -3,7 +3,7 @@ import { Navbar } from "../components/Navbar";
 import ReactPlayer from "react-player";
 
 import video1 from "../assets/video/Villa.mp4";
-import video2 from "../assets/video/videofranco.webm";
+import video2 from "../assets/video/videofranco.mov";
 
 import { VideoPlayerJS } from "../components/VideoPlayerJS";
 import { VideoReact } from "../components/VideoReact";
