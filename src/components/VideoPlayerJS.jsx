@@ -1,36 +1,27 @@
 /* eslint-disable react/prop-types */
-import { useEffect, useRef } from "react";
 
-export const VideoPlayerJS = ({ videoUrl }) => {
-  const videoRef = useRef(null);
-  useEffect(() => {
-    const videoElement = videoRef.current;
+import { Box } from "@mui/system";
+import video1 from "../assets/video/Villa.mp4";
 
-    if (videoElement) {
-      videoElement.src = videoUrl;
-      videoElement.autoplay = true;
-      videoElement.loop = true;
-      videoElement.preload = "auto";
-      videoElement.controls = true;
-
-      // Puedes agregar más configuraciones y manejar eventos según tus necesidades
-
-      return () => {
-        // Limpia los recursos cuando el componente se desmonta
-        videoElement.src = "";
-        videoElement.autoplay = true;
-        videoElement.loop = false;
-        videoElement.preload = "";
-        videoElement.controls = false;
-      };
-    }
-  }, [videoUrl]);
-
+export const VideoPlayerJS = () => {
   return (
-    <div>
-      <video ref={videoRef} className="video-js">
+    <Box bgcolor={"blue"} height={"100%"}>
+      <video
+        style={{
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+        }}
+        playsInline
+        autoPlay
+        loop
+        muted
+        preload="auto"
+        controls
+      >
+        <source src={video1} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-    </div>
+    </Box>
   );
 };
