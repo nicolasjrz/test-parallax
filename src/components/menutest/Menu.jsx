@@ -23,6 +23,7 @@ const pages = [
   { id: 2, name: "Skewed", url: "/skewed" },
   { id: 3, name: "Gallery", url: "/gallery" },
   { id: 4, name: "3D", url: "/3D" },
+  { id: 5, name: "Shop", url: "/shop" },
 ];
 
 import { Link, Link as RouterLink } from "react-router-dom";
